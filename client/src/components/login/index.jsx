@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { usePostLoginMutation, usePostSignUpMutation } from "@/state/api";
 
-const Login = ({setUser, setSecret}) => {
+const Login = ({ setUser, setSecret }) => {
     const [isRegister, setIsRegister] = useState(false);
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
@@ -14,6 +14,10 @@ const Login = ({setUser, setSecret}) => {
     };
     const handleRegister = () => {
         triggerSignUp({ username, password });
+    };
+    const handleDemoLogin = () => {
+        setUser("Demo");
+        setSecret("Demo1234");
     };
 
     useEffect(() => {
@@ -51,6 +55,9 @@ const Login = ({setUser, setSecret}) => {
                     />
                 </div>
                 <div className="login-actions">
+                    <button type="button" onClick={handleDemoLogin}>
+                        Demo User Login
+                    </button>
                     {isRegister ? (
                         <button type="button" onClick={handleRegister}>
                             Register
@@ -60,6 +67,11 @@ const Login = ({setUser, setSecret}) => {
                             Login
                         </button>
                     )}
+                </div>
+                <div>
+                    <p>
+                        Please note that the login process may take upto a minute as the server spins up. 
+                    </p>
                 </div>
             </div>
         </div>
