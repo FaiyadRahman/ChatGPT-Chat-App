@@ -1,7 +1,7 @@
 import React from "react";
 import MessageFormUI from "./MessageFormUI";
 import { useState } from "react";
-import { usePostAiCodeMutation } from "@/state/api";
+import { usePostAiCodeMutation } from "../../state/api";
 
 const AiCode = ({ props, activeChat }) => {
     const [message, setMessage] = useState("");
