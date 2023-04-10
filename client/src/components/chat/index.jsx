@@ -10,9 +10,9 @@ import Ai from "../customMessageForms/Ai";
 import AiCode from "../customMessageForms/AiCode";
 import AiAssist from "../customMessageForms/AiAssist";
 
-const Chat = ({user, secret}) => {
+const Chat = ({ user, secret }) => {
     const chatProps = useMultiChatLogic(
-        import.meta.env.VITE_PROJECT_ID,
+        "38ad9b0e-2cc1-47c8-9f83-e3c01e657de6",
         user,
         secret
     );

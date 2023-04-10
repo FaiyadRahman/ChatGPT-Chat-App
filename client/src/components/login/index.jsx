@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { usePostLoginMutation, usePostSignUpMutation } from "@/state/api";
+import { usePostLoginMutation, usePostSignUpMutation } from "../../state/api";
 
 const Login = ({ setUser, setSecret }) => {
     const [isRegister, setIsRegister] = useState(false);
