@@ -4,7 +4,7 @@ A chat application that lets you chat with others and also directly interact wit
 
 Built with Express.js, Node.js, React, ChatEngine, OpenAI API.
 
-## Project Screen Shots
+## Project Screenshots
 
 ![Screenshot-AI](screenshots/chatapp-AI-min.png)
 ![Screenshot-Human](screenshots/human-min.png)
