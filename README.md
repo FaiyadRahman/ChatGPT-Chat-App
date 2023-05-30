@@ -6,10 +6,8 @@ Built with Express.js, Node.js, React, ChatEngine, OpenAI API.
 
 ## Project Screen Shots
 
-![Screenshot-dashboard](docs/screenshots/dashboard.png)
-![Screenshot-properties](docs/screenshots/properties.png)
-![Screenshot-agents](docs/screenshots/agents.png)
-![Screenshot-myprifile](docs/screenshots/my-profile.png)
+![Screenshot-AI](screenshots/chatapp-AI-min.png)
+![Screenshot-Human](screenshots/human-min.png)
 
 
 ## Project Status
